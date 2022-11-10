@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script src="./main.js"></script> -->
+</head>
+<body>
+    <div id="header-plugin"></div>
+
+<div class="bgoverlay">
+  <div class="container">
+    <span class="ico">
+      <span class="ico2"></span>
+      <span class="title">iu Thuong</span>
+    </span>
+    <div class="endtext">
+      <span class="close" title="Restart"><i class="fa fa-times"></i></span>  
+      <h1>I love you baby</h1>
+      <h2>just you</h2>
+      <h3>- ebcuathuong</h3>
+    </div>
+  </div>
+</div>
+<script>
+  $( "#header-plugin" ).load( "https://vivinantony.github.io/header-plugin/", function() {
+	$("a.back-to-link").attr("href", "http://blog.thelittletechie.com/2016/02/be-my-valentine.html#tlt")  
+});
+
+$(document).ready(function(){
+  $('.title').click(function(){
+    $('.container').addClass('open');
+  });
+  
+  
+  $('.close').click(function(){
+    $('.container').removeClass('open');
+  });
+});
+</script>
+</body>
+</html>
